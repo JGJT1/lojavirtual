@@ -1,6 +1,36 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
+    font-family: "Montserrat", sans-serif;
     padding: 0;
     margin: 0;
+}
+
+#img_princ{
+    position: relative;
+    background-image: url("../img/fone-branco.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+#texto{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+}
+
+
+.anuncio{
+    display: flex;
+    flex-direction: column;
+    width: 140px;
+}
+.produto{
+    background-image: url("../img/produto.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 140px;
+    width: 140px;
 }

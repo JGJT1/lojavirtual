@@ -51,4 +51,7 @@ header div{
 header span{
     font-family: "Montserrat", sans-serif;
     color: rgb(243, 217, 105);
+    background: linear-gradient(316deg, #9BA0BC, #2F4858); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }

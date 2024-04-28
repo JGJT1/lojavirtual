@@ -17,41 +17,66 @@ paleta de cores
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
-header{
+header nav{
     display: flex;
-    font-size: 1.3em;
-    text-align: center;
-}
-header div{
-    display: flex;
-    width: 50%;
-}
-.txt{
-    flex-direction: column;
+    background-color: #a5722d80;
+    height: 50px;
+    width: 100%;
+    justify-content: left;
     align-items: center;
-    justify-content: center;
-    background-image: linear-gradient(to left, #fff , #e0e0e0,  #cccccc );
+    position: fixed;
+    z-index: 2;
 }
-.txt a{
-    text-decoration: none;
-    background-color: #fff;
-    color: #000;
-    padding: 15px 23px;
-    border-radius: 10px;
-    margin-top: 30px;
+header nav svg{
+    margin-left: 15px;
 }
-.img{
-    background-image: url("../img/fone-preto.jpg");
-    background-size: cover;
-    background-position: center center;
-    width: 50%;
-    height: 500px;
+header nav .bi-list{
+    height: 35px;
+}
+header nav .bi-search{
+    height: 30px;
 }
 
-header span{
+
+#hero .img{
+    background-image: url('../img/fone-preto.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+}
+#hero .txt{
+    position: absolute;
+    text-align: center;
+    color: #fff;
+    top: 35%;
+    right: 10%;
+}
+#hero .txt span{
     font-family: "Montserrat", sans-serif;
-    color: rgb(243, 217, 105);
-    background: linear-gradient(316deg, #9BA0BC, #2F4858); 
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+}
+#hero a{
+    background-color: #fff;
+    padding: 5px 30px;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#featured{
+    height: 600px;
+    background-color: #a07d73;
+}
+#featured h2{
+    display: inline;
+    font-family: "Montserrat", sans-serif;
+}
+.setas{
+    display: inline;
+    position: absolute;
+    right: 5%;
+}
+.bi-arrow-left,
+.bi-arrow-right{
+    height: 30px;
 }

@@ -22,16 +22,20 @@ header nav{
     background-color: #a5722d80;
     height: 50px;
     width: 100%;
-    justify-content: left;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 2;
+    padding-right: 10px;
 }
 header nav svg{
-    margin-left: 15px;
+    margin-left: 10px;
 }
-header nav .bi-list{
+header nav .headerIcon{
     height: 35px;
+}
+header nav .bi-heart{
+    height: 30px;
 }
 header nav .bi-search{
     height: 30px;
@@ -45,14 +49,28 @@ header nav .bi-search{
     height: 500px;
 }
 #hero .txt{
+    font-size: 1.6em;
     position: absolute;
     text-align: center;
     color: #fff;
-    top: 35%;
-    right: 10%;
+    top: 27%;
+    left: 10%;
 }
-#hero .txt span{
+#hero .txt #marca{
+    font-family: "Playfair Display", serif;
+    letter-spacing: 10px;
+}
+#hero .txt #shop,
+#hero .txt a{
+    letter-spacing: 0;
     font-family: "Montserrat", sans-serif;
+}
+#hero .txt a{
+    font-size: .7em;
+}
+#hero .txt #shop{
+    color: #EDCFA6;
+    text-shadow: 0 0 20px #ff9500;
 }
 #hero a{
     background-color: #fff;
@@ -64,6 +82,7 @@ header nav .bi-search{
 }
 
 #featured{
+    padding-top: 30px;
     height: 600px;
     background-color: #a07d73;
 }
@@ -71,12 +90,23 @@ header nav .bi-search{
     display: inline;
     font-family: "Montserrat", sans-serif;
 }
-.setas{
+#featured .setas{
     display: inline;
     position: absolute;
     right: 5%;
+    cursor: pointer;
 }
-.bi-arrow-left,
-.bi-arrow-right{
+#featured .bi-arrow-left,
+#featured .bi-arrow-right{
     height: 30px;
+}
+#featured #slider{
+    display: flex;
+}
+#featured .slide{
+    width: 33.33%;
+}
+#featured .slide img{
+    height: 300px;
+    width: 100%;
 }

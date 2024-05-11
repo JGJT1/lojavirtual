@@ -44,7 +44,7 @@ header nav .bi-search{
 
 #hero .img{
     background-image: url('../img/hero.jpg');
-    background-position: center;
+    background-position: center right;
     background-size: cover;
     height: 500px;
 }

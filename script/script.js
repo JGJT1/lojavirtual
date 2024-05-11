@@ -48,7 +48,7 @@ function sliderMain(){
           slides.forEach(slide =>{
             slide.style.right = `${contador}px`
           })
-          if (contador == -150){
+          if (contador == -140){
             boolean = false
           }
         }

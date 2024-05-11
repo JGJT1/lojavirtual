@@ -17,9 +17,6 @@ paleta de cores
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
-body{
-    overflow-x: hidden;
-}
 header nav{
     display: flex;
     background-color: #a5722d80;
@@ -107,20 +104,20 @@ header nav .bi-search{
 }
 #featured #slider{
     display: flex;
-    margin: 20px 0;
+    margin: 10px 0;
     overflow: hidden;
-    width: 300%;
+    width: 100%;
 }
 #featured .slide{
     position: relative;
-    width: 50%;
-    margin: 0 20px;
     transition: .2s;
+    margin: 0 20px;
+    width: 200px;
 }
 #featured .slide img{
     border-radius: 5px;
-    height: 300px;
-    width: 100%;
+    height: 304px;
+    width: 200px;
 }
 
 .icon{
@@ -138,15 +135,70 @@ header nav .bi-search{
     width: 0;
 }
 #sexWear{
-    position: absolute;
-    height: 710px;
-    display: flex;
-    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 .sexWear{
+    position: relative;
+    height: 600px;
     width: 100%;
 }
-.sexWear img{
+#sexWear img{
     width: 100%;
     height: 100%;
+}
+#sexWear span{
+    opacity: 0;
+    position: absolute;
+    font: 500 3em "Montserrat";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    color: #fff;
+    transition: .3s;
+}
+.overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000060;
+    transition: .5;
+}
+#male:hover span,
+#female:hover span,
+#male:hover .overlay,
+#female:hover .overlay{
+    opacity: 1;
+}
+footer{
+    font-family: "Playfair Display";
+    background-color:#444A51;
+    color: #fff;
+}
+footer img{
+    height: 200px;
+    width: 300px;
+}
+#footerLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footerLinks ul{
+    list-style-type: none;
+}
+#footerLinks h2{
+    margin: 0 -15px;
+}
+.aba{
+    margin: 20px 0;
+}
+.aba a{
+    text-decoration: none;
+    color: #fff;
 }

@@ -17,10 +17,13 @@ paleta de cores
     box-sizing: border-box;
     font-family: "Playfair Display", serif;
 }
+body{
+    overflow-x: hidden;
+}
 header nav{
     display: flex;
     background-color: #a5722d80;
-    height: 50px;
+    height: 60px;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -28,8 +31,9 @@ header nav{
     z-index: 2;
     padding-right: 10px;
 }
-header nav svg{
-    margin-left: 10px;
+header nav i{
+    margin: 0 10px;
+    font-size: 30px;
 }
 header nav .headerIcon{
     height: 35px;
@@ -83,8 +87,8 @@ header nav .bi-search{
 
 #featured{
     padding-top: 30px;
-    height: 600px;
-    background-color: #D2B996;
+    height: 400px;
+    background-color: #d2b996;
 }
 #featured h2{
     display: inline;
@@ -96,17 +100,53 @@ header nav .bi-search{
     right: 5%;
     cursor: pointer;
 }
-#featured .bi-arrow-left,
-#featured .bi-arrow-right{
-    height: 30px;
+#featured .fa-arrow-left,
+#featured .fa-arrow-right{
+    font-size: 30px;
+    margin: 0 10px;
 }
 #featured #slider{
     display: flex;
+    margin: 20px 0;
+    overflow: hidden;
+    width: 300%;
 }
 #featured .slide{
-    width: 33.33%;
+    position: relative;
+    width: 50%;
+    margin: 0 20px;
+    transition: .2s;
 }
 #featured .slide img{
+    border-radius: 5px;
     height: 300px;
     width: 100%;
+}
+
+.icon{
+    cursor: pointer;
+}
+.sideBar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 20px;
+    background-color: #fff;
+    height: 100%;
+    width: 0;
+}
+#sexWear{
+    position: absolute;
+    height: 710px;
+    display: flex;
+    flex-direction: column;
+}
+.sexWear{
+    width: 100%;
+}
+.sexWear img{
+    width: 100%;
+    height: 100%;
 }

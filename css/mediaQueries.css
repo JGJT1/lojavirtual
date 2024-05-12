@@ -1,0 +1,39 @@
+@media screen and (min-width: 768px){
+  #sexWear{
+    display: flex;
+  }
+  .sexWear{
+    width: 49vw;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #hero .img{
+    background-image: url('../img/m/hero\(m\).jpg');
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #hero .img{
+    height: 800px;
+    background-image: url('../img/default/hero.jpg');
+  }
+  #hero .txt{
+    top: 33%;
+    left: 15%;
+  }
+  #hero{
+    height: 650px;
+  }
+  #featured{
+    height: 500px;
+  }
+  #featured .slide img{
+    height: 400px;
+    width: 300px;
+  }
+  #featured .slide{
+    position: relative;
+    margin: 0 70px;
+  }
+}

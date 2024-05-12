@@ -34,26 +34,37 @@ setaEsquerda.addEventListener('click', function(){
   }
 })
 
+
+window.addEventListener('load', function() {
+  if (window.innerWidth >= 1024) {
+    // Se a largura da tela for maior que 1024px
+    limiteContador = 700; // Altere o limite do contador para 500
+  } else {
+    // Caso contrário, a largura da tela é menor ou igual a 1024px
+    limiteContador = 1000; // Mantenha o limite do contador como 1000
+  }
+});
+
 // função de slider automático 
 function sliderMain(){
   intervaloSlider = setInterval(function(){
-      contador++
+      contador++;
       slides.forEach(slide =>{
-        slide.style.right = `${contador}px`
-      })
-      if (contador > 1000){
-        boolean = true
+        slide.style.right = `${contador}px`;
+      });
+      if (contador > limiteContador){
+        boolean = true;
         while (boolean){
-          contador--
+          contador--;
           slides.forEach(slide =>{
-            slide.style.right = `${contador}px`
-          })
-          if (contador == -140){
-            boolean = false
+            slide.style.right = `${contador}px`;
+          });
+          if (contador == -100){
+            boolean = false;
           }
         }
       }
-  }, 20)
+  }, 20);
 }
 function pausarSlider() {
   clearInterval(intervaloSlider);

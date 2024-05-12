@@ -44,8 +44,8 @@ header nav .bi-search{
 
 
 #hero .img{
-    background-image: url('../img/hero.jpg');
-    background-position: center right;
+    background-image: url('../img/p/hero\(p\).jpg');
+    background-position: center center;
     background-size: cover;
     height: 500px;
 }
@@ -140,7 +140,7 @@ header nav .bi-search{
 }
 .sexWear{
     position: relative;
-    height: 600px;
+    height: 700px;
     width: 100%;
 }
 #sexWear img{

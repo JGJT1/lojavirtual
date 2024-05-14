@@ -124,6 +124,8 @@ header nav .bi-search{
     cursor: pointer;
 }
 .sideBar{
+    display: flex;
+    flex-direction: column;
     position: fixed;
     top: 0;
     left: 0;
@@ -133,6 +135,38 @@ header nav .bi-search{
     background-color: #fff;
     height: 100%;
     width: 0;
+}
+.sideBar #closeMenuIcon{
+    margin-left: 20px;
+}
+.sideBar ul{
+    margin: 20px;
+    list-style-type: none;
+}
+.sideBar2{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: right;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    transition: .5s;
+    padding-top: 20px;
+    background-color: #fff;
+    height: 100%;
+    width: 0;
+}
+.sideBar2 #closeMenuCarrinhoIcon{
+    text-align: right;
+    margin-right: 20px;
+}
+.sideBar2 ul{
+    list-style: none;
+    margin: 20px;
+}
+#carrinhoSideBar{
+    background-color: #bbb;
 }
 #sexWear{
     height: 100%;

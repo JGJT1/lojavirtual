@@ -4,10 +4,19 @@ const closeMenuIcon = document.getElementById('closeMenuIcon');
 const slides = document.querySelectorAll('.slide');
 const setaEsquerda = document.getElementById('setaEsquerda');
 const setaDireita = document.getElementById('setaDireita');
+const carrinho = document.getElementById('carrinho');
+const carrinhoSideBar = document.getElementById('carrinhoSideBar');
+const closeMenuCarrinhoIcon = document.getElementById('closeMenuCarrinhoIcon');
 let contador = 0;
 let boolean = true;
 let intervaloSlider;
 
+carrinho.addEventListener('click', function(){
+  carrinhoSideBar.style.width = '250px'
+})
+closeMenuCarrinhoIcon.addEventListener('click', function(){
+  carrinhoSideBar.style.width = '0'
+})
 // clique do burguer para ativar a side bar principal
 menuIcon.addEventListener('click', function(){
   mainSideBar.style.width = '250px'
@@ -38,7 +47,7 @@ setaEsquerda.addEventListener('click', function(){
 window.addEventListener('load', function() {
   if (window.innerWidth >= 1024) {
     // Se a largura da tela for maior que 1024px
-    limiteContador = 700; // Altere o limite do contador para 500
+    limiteContador = 800; // Altere o limite do contador para 500
   } else {
     // Caso contrário, a largura da tela é menor ou igual a 1024px
     limiteContador = 1000; // Mantenha o limite do contador como 1000
@@ -64,7 +73,7 @@ function sliderMain(){
           }
         }
       }
-  }, 20);
+  }, 2);
 }
 function pausarSlider() {
   clearInterval(intervaloSlider);

@@ -73,7 +73,7 @@ function sliderMain(){
           }
         }
       }
-  }, 2);
+  }, 20);
 }
 function pausarSlider() {
   clearInterval(intervaloSlider);

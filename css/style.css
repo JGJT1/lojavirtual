@@ -183,14 +183,21 @@ header nav .bi-search{
 }
 #sexWear span{
     opacity: 0;
+    text-align: center;
     position: absolute;
-    font: 500 3em "Montserrat";
-    top: 50%;
+    font: 500 3em "Playfair Display";
+    top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: block;
-    color: #fff;
+    color: #edcfac;
+    text-shadow: 0 0 20px #ff9500;
     transition: .3s;
+}
+#sexWear .colecao{
+    color: #acede9;
+    text-shadow: 0 0 20px #0037ff;
+    top: 60%;
 }
 .overlay {
     opacity: 0;
@@ -235,4 +242,48 @@ footer img{
 .aba a{
     text-decoration: none;
     color: #fff;
+}
+
+.vendas{
+    display: flex;
+    flex-wrap: wrap;
+}
+.product{
+    cursor: pointer;
+    position: relative;
+    border-radius: 5px;
+    margin: 20px;
+    height: 400px;
+    width: 40vw;
+}
+.textProduct{
+    height: 80px;
+}
+.textProduct h2{
+    text-align: center;
+    font-family: "Montserrat";
+    font-size: 1.3em;
+    margin: 0 5px;
+}
+.textProduct .price{
+    text-align: center;
+    font-size: 1em;
+    color: #fff;
+    margin: 0 33%;
+}
+.product i{
+    position: absolute;
+    top: 2%;
+    right: 3%;
+    color: #fff;
+    font-size: 1.5em;
+}
+.product .image{
+    width: 40vw;
+    height: 80%;
+}
+.product img{
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
 }

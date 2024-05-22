@@ -7,9 +7,15 @@ const setaDireita = document.getElementById('setaDireita');
 const carrinho = document.getElementById('carrinho');
 const carrinhoSideBar = document.getElementById('carrinhoSideBar');
 const closeMenuCarrinhoIcon = document.getElementById('closeMenuCarrinhoIcon');
+const main = document.getElementById('main');
 let contador = 0;
 let boolean = true;
 let intervaloSlider;
+
+main.addEventListener('click', function(){
+  carrinhoSideBar.style.width = '0'
+  mainSideBar.style.width = '0'
+})
 
 carrinho.addEventListener('click', function(){
   carrinhoSideBar.style.width = '250px'

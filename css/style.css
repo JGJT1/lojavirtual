@@ -149,12 +149,16 @@ header nav .bi-search{
 }
 .sideBar a{
     display: block;
-    padding: 10px 15px;
+    padding: 10px 35px;
     text-decoration: none;
     color: inherit;
     height: 100%;
     width: 100%;
     transition: .3s;
+}
+.sideBar hr{
+    width: 80%;
+    margin: 0 auto;
 }
 .sideBar a:hover{
     background-color: #aaa;

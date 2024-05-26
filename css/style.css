@@ -174,10 +174,22 @@ header nav .bi-search{
     padding: 30px 0;
     list-style-type: none;
 }
+.sideBar summary{
+    position: relative;
+}
+.sideBar summary i{
+    position: absolute;
+    left: 150px;
+    top: 25px;
+    height: 10px;
+    color: black;
+}
 .sideBar li{
     font-size: 1.4em;
 }
-.sideBar a{
+.sideBar a,
+.sideBar summary{
+    cursor: pointer;
     display: block;
     padding: 10px 35px;
     text-decoration: none;
@@ -252,8 +264,6 @@ footer img{
 #footerLinks{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 #footerLinks ul{
     list-style-type: none;
@@ -262,15 +272,25 @@ footer img{
     margin: 0 -15px;
 }
 .aba{
-    margin: 20px 0;
+    margin: 20px auto;
 }
 .aba a{
     text-decoration: none;
     color: #fff;
 }
 
+#corpoVendas{
+    background-color: #FFEBCD;
+}
+#corpoVendas h1{
+    text-align: center;
+}
 .vendas{
     display: flex;
+    flex-wrap: wrap;
+}
+.vendas img{
+    object-fit: cover;
 }
 .product{
     cursor: pointer;
@@ -278,7 +298,7 @@ footer img{
     border-radius: 5px;
     margin: 20px;
     height: 400px;
-    width: 260px;
+    width: 270px;
 }
 .textProduct{
     height: 80px;
@@ -294,6 +314,9 @@ footer img{
     font-size: 1em;
     color: #fff;
     margin: 0 33%;
+    background-color: #000;
+    padding: 5px 7px;
+    border-radius: 5px;
 }
 .product i{
     position: absolute;
